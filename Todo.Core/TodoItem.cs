@@ -1,12 +1,12 @@
-﻿using System;
+﻿// <copyright file="TodoItem.cs" company="NATK">
+// Copyright (c) NATK. All rights reserved.
+// </copyright>
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// <copyright file="TodoItem.cs" company="NATK">
-// Copyright (c) NATK. All rights reserved.
-// </copyright>
 namespace Todo.Core
 {
     public class TodoItem
@@ -29,6 +29,7 @@ namespace Todo.Core
             {
                 throw new ArgumentException("Title is required", nameof(newTitle));
             }
+
             Title = newTitle.Trim();
         }
     }
